@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title> Rock, Paper, Scissors </title>
+</head>
+
+<body>
+  <form action="/choice" method="post">
+    <label for="choice">Enter your choice:</label>
+    <input type="text" id="choice" name="choice">
+    <input type="submit">
+  </form>
+
+  <p> The computer chose <%= @computer %></p>
+  <p> The Winner is <%= session[:winner] %> </p>
+  <p> The score is: Player<%= @score[:player]%> and Computer <%= @score[:computer]%> </p>
+</body>
+</html>
